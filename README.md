@@ -1,0 +1,104 @@
+# Topological Photonic Lattice Explorer
+
+A standalone desktop application for simulating and visualizing topological photonic lattices. No Jupyter or notebook environment required — just run or build the app and start exploring.
+
+---
+
+## Overview
+
+This tool is designed for **linear photonic systems only** — it models coupled-resonator lattices in the linear (single-photon / classical field) regime and does not account for nonlinear effects such as Kerr interactions or parametric processes.
+
+Within that scope, it lets you interactively construct coupled-resonator lattices, tune their Hamiltonians, and compute transmission spectra and field flow in real time. It is designed for researchers studying topological photonics, including integer quantum Hall (IQH) and anomalous quantum Hall (AQH) phases in photonic systems.
+
+The GUI is built with PyQt5 and Matplotlib, and the physics backend uses fully vectorized NumPy computations. An optional JAX backend is supported: if JAX is installed, the frequency solver is JIT-compiled and dispatched via XLA (GPU or CPU), with automatic fallback to NumPy otherwise.
+
+---
+
+## Features
+
+- **Multiple lattice geometries**: IQH superlattice, AQH superlattice, IQH×AQH mixed, AQH zigzag, IQH cylinder, AQH cylinder
+- **Interactive lattice editor**: click to set input/output ports, add on-site potential perturbations ("heaters"), or introduce defects (missing sites)
+- **Tunable Hamiltonian parameters**: flux phases φ_IQH and φ_AQH, intra/inter-supercell coupling strengths, loss rates κ_in and κ_ex, and superlattice grid sizes
+- **Transmission spectrum**: through-port, drop-port, and group delay plots over a user-defined frequency sweep
+- **Field flow visualization**: steady-state power flow arrows on the lattice at any probe frequency
+- **Cylinder geometries**: periodic boundary in x with tunable external flux ψ, polar visualization
+- **Optional JAX acceleration**: GPU/XLA-accelerated frequency solve when JAX is available
+- **Session export**: save lattice images (PNG + SVG), spectra plots, all parameters, and complex field data as a timestamped `.zip`
+
+---
+
+## Requirements
+
+- Python 3.8+
+- PyQt5 >= 5.15
+- matplotlib >= 3.7
+- numpy >= 1.24
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Optional (for GPU/XLA acceleration):
+
+```bash
+pip install jax jaxlib
+```
+
+---
+
+## Running from Source
+
+```bash
+python app.py
+```
+
+---
+
+## Building a Standalone Executable
+
+### Linux / macOS
+
+```bash
+bash build.sh
+```
+
+The binary will be at `dist/PhotonicLatticeExplorer`.
+
+### Windows
+
+```bat
+build.bat
+```
+
+The executable will be at `dist\PhotonicLatticeExplorer.exe`.
+
+Both scripts install dependencies and invoke PyInstaller with the correct flags for a single-file windowed application.
+
+---
+
+## Usage
+
+1. **Select a Hamiltonian type** from the dropdown (e.g. `IQH_IQH`, `AQH_cyl`, `A_zigzag`).
+2. **Set lattice dimensions** using the grid size spinboxes (Nx0, Ny0 for the unit cell; Nx1, Ny1 for the supercell).
+3. **Adjust physics parameters**: coupling J1, loss rates κ_in / κ_ex, and flux phases φ_IQH / φ_AQH via the sliders.
+4. **Edit the lattice**: use the mode buttons to set the IN/OUT ports, apply on-site potentials to individual rings, or mark sites as defects.
+5. **Set the frequency sweep** range and step size, then click **Run** to compute.
+6. **Inspect results**: click or drag on the spectrum panels to probe the field flow at any frequency.
+7. **Save**: choose an output folder and click **Save** to export all plots and data as a `.zip`.
+
+---
+
+## File Structure
+
+```
+├── app.py                        # Main application (UI + physics)
+├── requirements.txt              # Python dependencies
+├── build.sh                      # Linux/macOS build script
+├── build.bat                     # Windows build script
+├── PhotonicLatticeExplorer.spec  # PyInstaller spec file
+└── icon.ico                      # Application icon
+```
+
+
