@@ -126,5 +126,11 @@ The tight-binding model and topological lattices implemented here build on:
 - M. Jalali Mehrabad, A. Parhizkar, L. Xu, *et al.*, *Quantum Metamorphosis: Programmable
   Emergence and the Breakdown of Bulk–Edge Dichotomy in Multiscale Systems*,
   arXiv:2511.13831 (2025).
+- C. J. Flower, M. Jalali Mehrabad, L. Xu, *et al.*, *Observation of topological frequency
+  combs*, Science **384**, 1356 (2024).
+- L. Xu, M. Jalali Mehrabad, C. J. Flower, *et al.*, *On-chip multi-timescale spatiotemporal
+  optical synchronization*, Science Advances **11**, eadw7696 (2025).
+- L. Xu, A. Padhye, S. Sarkar, *et al.*, *Single-Shot Realization of 10000-Mode
+  Octave-Spanning Artificial Gauge Fields*, arXiv:2606.23960 (2026).
 
 
