@@ -130,6 +130,8 @@ The tight-binding model and topological lattices implemented here build on:
   combs*, Science **384**, 1356 (2024).
 - L. Xu, M. Jalali Mehrabad, C. J. Flower, *et al.*, *On-chip multi-timescale spatiotemporal
   optical synchronization*, Science Advances **11**, eadw7696 (2025).
+- M. Jalali Mehrabad, L. Xu, G. Moille, *et al.*, *Multi-timescale frequency-phase matching
+  for high-yield nonlinear photonics*, Science **390**, 612 (2025).
 - L. Xu, A. Padhye, S. Sarkar, *et al.*, *Single-Shot Realization of 10000-Mode
   Octave-Spanning Artificial Gauge Fields*, arXiv:2606.23960 (2026).
 
