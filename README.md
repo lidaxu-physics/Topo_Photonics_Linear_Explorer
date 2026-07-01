@@ -10,6 +10,8 @@ This tool is designed for **linear photonic systems only** — it models coupled
 
 Within that scope, it lets you interactively construct coupled-resonator lattices, tune their Hamiltonians, and compute transmission spectra and field flow in real time. It is designed for researchers studying topological photonics, including integer quantum Hall (IQH) and anomalous quantum Hall (AQH) phases in photonic systems.
 
+**Model.** The physics backend is a **tight-binding (coupled-mode) effective Hamiltonian**: each site ring is a single mode, and the intermediate *link (coupling) rings are integrated out* into effective nearest-neighbor hoppings carrying synthetic-flux (Peierls) phases. The simulator therefore does **not** resolve the field inside the link rings or the round-trip propagation within a ring — it works directly in the lattice Hamiltonian picture, which makes it fast and ideal for exploring band structure and edge modes. For a full *z*-resolved transfer-matrix treatment that keeps the link rings explicitly (and a nonlinear Kerr-comb extension), see the companion repositories [Topological_Photonics_TMM](https://github.com/lidaxu-physics/Topological_Photonics_TMM) and [Topological_Photonics_Ikeda](https://github.com/lidaxu-physics/Topological_Photonics_Ikeda).
+
 The GUI is built with PyQt5 and Matplotlib, and the physics backend uses fully vectorized NumPy computations. An optional JAX backend is supported: if JAX is installed, the frequency solver is JIT-compiled and dispatched via XLA (GPU or CPU), with automatic fallback to NumPy otherwise.
 
 ---
@@ -100,5 +102,29 @@ Both scripts install dependencies and invoke PyInstaller with the correct flags 
 ├── PhotonicLatticeExplorer.spec  # PyInstaller spec file
 └── icon.ico                      # Application icon
 ```
+
+---
+
+## License
+
+Released under the **MIT License** — see [`LICENSE`](LICENSE).
+
+## Citation
+
+If you use this software in academic work, please cite both the software and the relevant
+publications. Citation metadata is in [`CITATION.cff`](CITATION.cff), and GitHub renders a
+ready-to-copy citation via the **"Cite this repository"** button on the repo sidebar.
+
+The tight-binding model and topological lattices implemented here build on:
+
+- M. Hafezi, E. A. Demler, M. D. Lukin, and J. M. Taylor, *Robust optical delay lines with
+  topological protection*, Nature Physics **7**, 907 (2011).
+- M. Hafezi, S. Mittal, J. Fan, A. Migdall, and J. M. Taylor, *Imaging topological edge
+  states in silicon photonics*, Nature Photonics **7**, 1001 (2013).
+- S. Mittal, V. V. Orre, D. Leykam, Y. D. Chong, and M. Hafezi, *Photonic anomalous quantum
+  Hall effect*, Phys. Rev. Lett. **123**, 043201 (2019).
+- M. Jalali Mehrabad, A. Parhizkar, L. Xu, *et al.*, *Quantum Metamorphosis: Programmable
+  Emergence and the Breakdown of Bulk–Edge Dichotomy in Multiscale Systems*,
+  arXiv:2511.13831 (2025).
 
 

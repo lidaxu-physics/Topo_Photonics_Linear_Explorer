@@ -1,0 +1,166 @@
+cff-version: 1.2.0
+title: "Topological Photonic Lattice Explorer (Tight-Binding)"
+message: >-
+  If you use this software in academic work, please cite both the software
+  (this entry) and the relevant publications listed under "references" below.
+type: software
+authors:
+  - given-names: Lida
+    family-names: Xu
+  - given-names: Mahmoud
+    family-names: Jalali Mehrabad
+  - given-names: "Christopher J."
+    family-names: Flower
+  - given-names: Mohammad
+    family-names: Hafezi
+version: "1.0"
+date-released: "2026-07-01"
+license: MIT
+url: "https://github.com/lidaxu-physics/Topo_Photonics_Linear_Explorer"
+repository-code: "https://github.com/lidaxu-physics/Topo_Photonics_Linear_Explorer"
+keywords:
+  - topological photonics
+  - tight-binding model
+  - coupled-ring resonators
+  - synthetic gauge field
+  - integer quantum Hall
+  - anomalous Floquet topological insulator
+references:
+  - type: article
+    title: "Robust optical delay lines with topological protection"
+    authors:
+      - given-names: Mohammad
+        family-names: Hafezi
+      - given-names: "Eugene A."
+        family-names: Demler
+      - given-names: "Mikhail D."
+        family-names: Lukin
+      - given-names: "Jacob M."
+        family-names: Taylor
+    journal: Nature Physics
+    volume: 7
+    start: 907
+    end: 912
+    year: 2011
+    doi: "10.1038/nphys2063"
+  - type: article
+    title: "Imaging topological edge states in silicon photonics"
+    authors:
+      - given-names: Mohammad
+        family-names: Hafezi
+      - given-names: Sunil
+        family-names: Mittal
+      - given-names: Jingyun
+        family-names: Fan
+      - given-names: Alan
+        family-names: Migdall
+      - given-names: "Jacob M."
+        family-names: Taylor
+    journal: Nature Photonics
+    volume: 7
+    start: 1001
+    end: 1005
+    year: 2013
+    doi: "10.1038/nphoton.2013.274"
+  - type: article
+    title: "Photonic anomalous quantum Hall effect"
+    authors:
+      - given-names: Sunil
+        family-names: Mittal
+      - given-names: "Venkata Vikram"
+        family-names: Orre
+      - given-names: Daniel
+        family-names: Leykam
+      - given-names: "Yi Dong"
+        family-names: Chong
+      - given-names: Mohammad
+        family-names: Hafezi
+    journal: Physical Review Letters
+    volume: 123
+    start: 43201
+    year: 2019
+    doi: "10.1103/PhysRevLett.123.043201"
+  - type: article
+    title: "Quantum Metamorphosis: Programmable Emergence and the Breakdown of Bulk-Edge Dichotomy in Multiscale Systems"
+    authors:
+      - given-names: Mahmoud
+        family-names: Jalali Mehrabad
+      - given-names: Alireza
+        family-names: Parhizkar
+      - given-names: Lida
+        family-names: Xu
+      - given-names: Gregory
+        family-names: Moille
+      - given-names: Avik
+        family-names: Dutt
+      - given-names: Dirk
+        family-names: Englund
+      - given-names: Kartik
+        family-names: Srinivasan
+      - given-names: Daniel
+        family-names: Leykam
+      - given-names: Mohammad
+        family-names: Hafezi
+    journal: arXiv preprint
+    year: 2025
+    doi: "10.48550/arXiv.2511.13831"
+    url: "https://arxiv.org/abs/2511.13831"
+  - type: article
+    title: "Observation of topological frequency combs"
+    authors:
+      - given-names: "Christopher J."
+        family-names: Flower
+      - given-names: Mahmoud
+        family-names: Jalali Mehrabad
+      - given-names: Lida
+        family-names: Xu
+      - given-names: Gregory
+        family-names: Moille
+      - given-names: "Daniel G."
+        family-names: Suárez-Forero
+      - given-names: Oğulcan
+        family-names: Örsel
+      - given-names: Gaurav
+        family-names: Bahl
+      - given-names: Yanne
+        family-names: Chembo
+      - given-names: Kartik
+        family-names: Srinivasan
+      - given-names: Sunil
+        family-names: Mittal
+      - given-names: Mohammad
+        family-names: Hafezi
+    journal: Science
+    volume: 384
+    start: 1356
+    end: 1361
+    year: 2024
+    doi: "10.1126/science.ado0053"
+  - type: article
+    title: "On-chip multi-timescale spatiotemporal optical synchronization"
+    authors:
+      - given-names: Lida
+        family-names: Xu
+      - given-names: Mahmoud
+        family-names: Jalali Mehrabad
+      - given-names: "Christopher J."
+        family-names: Flower
+      - given-names: Gregory
+        family-names: Moille
+      - given-names: Alessandro
+        family-names: Restelli
+      - given-names: "Daniel G."
+        family-names: Suárez-Forero
+      - given-names: Yanne
+        family-names: Chembo
+      - given-names: Sunil
+        family-names: Mittal
+      - given-names: Kartik
+        family-names: Srinivasan
+      - given-names: Mohammad
+        family-names: Hafezi
+    journal: Science Advances
+    volume: 11
+    notes: "Article eadw7696"
+    year: 2025
+    doi: "10.1126/sciadv.adw7696"
