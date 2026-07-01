@@ -165,6 +165,39 @@ references:
     year: 2025
     doi: "10.1126/sciadv.adw7696"
   - type: article
+    title: "Multi-timescale frequency-phase matching for high-yield nonlinear photonics"
+    authors:
+      - given-names: Mahmoud
+        family-names: Jalali Mehrabad
+      - given-names: Lida
+        family-names: Xu
+      - given-names: Gregory
+        family-names: Moille
+      - given-names: "Christopher J."
+        family-names: Flower
+      - given-names: Supratik
+        family-names: Sarkar
+      - given-names: Apurva
+        family-names: Padhye
+      - given-names: Shao-Chien
+        family-names: Ou
+      - given-names: "Daniel G."
+        family-names: Suárez-Forero
+      - given-names: Mahdi
+        family-names: Ghafariasl
+      - given-names: Yanne
+        family-names: Chembo
+      - given-names: Kartik
+        family-names: Srinivasan
+      - given-names: Mohammad
+        family-names: Hafezi
+    journal: Science
+    volume: 390
+    start: 612
+    end: 616
+    year: 2025
+    doi: "10.1126/science.adu6368"
+  - type: article
     title: "Single-Shot Realization of 10000-Mode Octave-Spanning Artificial Gauge Fields"
     authors:
       - given-names: Lida
